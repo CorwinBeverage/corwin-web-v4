@@ -1,0 +1,35 @@
+doctype html
+html(lang='en')
+  head
+    
+    include ../includes/site-head.pug
+      
+    
+    title Request Service
+
+  body
+    
+    include ../includes/site-nav.pug
+    
+    include ../includes/page-header.pug
+
+    
+    section.page.request-service
+      h1.page__title.tk-pauline Request Service
+      .page__wrapper
+        h2 Corwin Service Department
+        p
+          | Contact our Service Department for help with your cooler, draft, and fountain equipment.
+        ul.contact__phones
+          li.contact__phone-number
+            span.contact__label Phone:
+            span.contact__number (360) 696-0766
+          li.contact__phone-number
+            span.contact__label Email:
+            span.contact__number.contact--email
+              a(href='mailto:ServDept@corwinbevco.com') ServDept@corwinbevco.com
+
+
+    include ../includes/site-footer.pug
+      
+    include ../includes/global-scripts.pug

@@ -1,0 +1,120 @@
+doctype html
+html(lang='en')
+  head
+    
+    include ../includes/site-head.pug
+      
+    
+    title Contact Us
+
+  body
+    
+    include ../includes/site-nav.pug
+    
+    include ../includes/page-header.pug
+
+    section.page.contact
+      h1.page__title.tk-pauline Contact Us
+      .page__wrapper
+        h2 Corwin Beverage Company
+        p.contact__address
+          | 219 S. Timm Road 
+          span Ridgefield, WA 98642
+        ul.contact__phones
+          li.contact__phone-number
+            span.contact__label Phone:
+            span.contact__number (360) 696-0766
+          li.contact__phone-number
+            span.contact__label Fax:
+            span.contact__number (360) 696-1453
+          li.contact__phone-number
+            span.contact__label Toll-Free:
+            span.contact__number (888) 855-4458
+        iframe.contact__map(frameborder='0', style='border:0', src='https://www.google.com/maps/embed/v1/place?key=AIzaSyCp9zIzqnXLUWSr2xHJU4BzIlb01Ey1BC8\
+        &q=Corwin+Beverage,Ridgefield+WA', allowfullscreen='')
+        h2 Our Team
+        .team
+          figure
+            img(alt='Keith Richards photo', src='images/richards.jpg')
+            figcaption
+              | Keith Richards
+              span.team__title CEO
+              a.team__email(href='mailto:keith_richards@corwinbevco.com') E-mail Keith
+          figure
+            img(alt="Brian Bortvedt's photo", src='images/bortvedt.jpg')
+            figcaption
+              | Brian Bortvedt
+              span.team__title Controller
+              a.team__email(href='mailto:Brian_Bortvedt@corwinbevco.com\
+              ') E-mail Keith
+          figure
+            img(alt='Stacey Jacques photo', src='images/jacques.jpg')
+            figcaption
+              | Stacey Jacques 
+              span.team__title HR Manager
+              a.team__email(href='mailto:stacey_jacques@corwinbevco.com') E-mail Stacey
+          figure
+            img(alt="Zachary Nizam-Aldine's photo", src='images/photo-placeholder.jpg')
+            figcaption
+              | Zachary Nizam-Aldine
+              span.team__title Director of Operations
+              a.team__email(href='mailto:Zachary_Nizam-Aldine@corwinbevco.com') E-mail Chris
+          figure
+            img(alt="Kevin Braun's photo", src='images/braun.jpg')
+            figcaption
+              | Kevin Braun
+              span.team__title IT Manager
+              a.team__email(href='mailto:Kevin_Braun@corwinbevco.com') E-mail Kevin
+          figure
+            img(alt='Chris Barnes photo', src='images/barnes.jpg')
+            figcaption
+              | Chris Barnes
+              span.team__title On Premise District Manager
+              a.team__email(href='mailto:Chris_Barnes@corwinbevco.com') E-mail Chris
+          figure
+            img(alt='Nate Herbst photo', src='images/herbst.jpg')
+            figcaption
+              | Nate Herbst 
+              span.team__title Key Account Manager
+              a.team__email(href='mailto:Nathanh@corwinbevco.com') E-mail Nate
+          figure
+            img(alt="Pam Marini's photo", src='images/marini.jpg')
+            figcaption
+              | Pam Marini 
+              span.team__title Director of Sales Support
+              a.team__email(href='mailto:Pam_Marini@Corwinbevco.com') E-mail Pam
+          figure
+            img(alt="Shaun Nelson's photo", src='images/nelson.jpg')
+            figcaption
+              | Shaun Nelson 
+              span.team__title Inventory Manager
+              a.team__email(href='mailto:shaun_nelson@corwinbevco.com') E-mail Shaun
+          figure
+            img(alt="Tim Osborn's photo", src='images/photo-placeholder.jpg')
+            figcaption
+              | Tim Osborn 
+              span.team__title Service Manager
+              a.team__email(href='mailto:Tim_Osborn@corwinbevco.com') E-mail Tim
+          figure
+            img(alt="Jamie Posselt's photo", src='images/posselt.jpg')
+            figcaption
+              | Jamie Posselt
+              span.team__title Merchandising Manager
+              a.team__email(href='mailto:Jamie_Posselt@corwinbevco.com') E-mail Jamie
+          figure
+            img(alt="Davis Tran's photo", src='images/tran.jpg')
+            figcaption
+              | Davis Tran
+              span.team__title Fleet Manager
+              a.team__email(href='mailto:Davis_Tran@corwinbevco.com') E-mail Jamie
+          figure
+            img(alt="Chris Workman's photo", src='images/workman.jpg')
+            figcaption
+              | Chris Workman 
+              span.team__title Community Relations Manager
+              a.team__email(href='mailto:ChrisW@corwinbevco.com') E-mail Chris
+        // end .team
+
+    include ../includes/site-footer.pug
+      
+    include ../includes/global-scripts.pug

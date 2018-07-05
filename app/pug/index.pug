@@ -1,0 +1,116 @@
+doctype html
+html(lang='en')
+  head
+    
+    include ../includes/site-head.pug
+      
+    // Slider
+    link(rel='stylesheet', href='css/jquery.bxslider.css')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js')
+    script(src='js/jquery.bxslider.min.js')
+    
+    //Animate On Scroll library
+      https://michalsnik.github.io/aos/
+    link(rel='stylesheet', href='css/aos.css')
+    script(src='js/aos.js')
+    
+    title Corwin Beverage Company
+
+  body
+    
+    include ../includes/site-nav.pug
+    
+    .home-hero-banner
+    section.intro
+      .intro__wrapper(data-aos='fade-right')
+        img.intro__logo(src='images/corwin-logo-reverse.svg', alt='Corwin Beverage Company logo')
+        h2.intro__headline.tk-pauline Refreshing Southwest Washington
+        p.intro__text
+          strong Corwin Beverage
+          |  is a fourth-generation, family owned and operated business. We serve our original territory of Vancouver as well as Clark, Cowlitz, Skamania, and Wahkiakum counties. For 75 years, our offerings have grown to a product line of more than 300 beverages to fit any lifestyle. We distribute beverages including Pepsi, Dr Pepper, MTN Dew, Gatorade, many waters, juices, hot coffee and teas.
+    // end of .intro
+    section#services.services
+      h2.services__headline.tk-pauline services
+      ul.services__services-list
+        li.services--beverages(data-aos='fade-up')
+          | Beverages
+          a.services__button(href='pricebook.pdf') Pricebook
+        li.services--coffee(data-aos='fade-up')
+          | Coffee
+          a.services__button(href='http://revoltcoffee.com') Learn More
+        li.services--vending(data-aos='fade-up')
+          | Vending
+          a.services__button(href='vending.html') Learn More
+        li.services--equipment(data-aos='fade-up')
+          | Fountain
+          a.services__button(href='fountain.html') Learn More
+        li.services--water(data-aos='fade-up')
+          | Water
+          a.services__button(href='water.html') Learn More
+        li.services--crave(data-aos='fade-up')
+          | Crave MicroMarkets
+          a.services__button(href='crave.html') Learn More
+      // This is a kludge for Animate on Scroll. The slideshow appears to be throwing off the screen height, so AOS isn't able to accuration determine the visibility for items below the slideshow.
+      #aos-trigger1
+      #aos-trigger2
+    section.slider-section
+      #slider1.slider.home-page-slider
+        div
+          img.slider-image(alt='20 ounce Pepsi bottle', src='images/20oz-bottle-mockup.png')
+          .slider-caption
+            h3 Beverages
+            p We distribute Pepsi, Gatorade, MTN Dew, and dozens of other leading brands.
+            a.slider__button(href='pricebook.pdf') Download Pricebook
+        div
+          img.slider-image(alt='Revolt coffee cups', src='images/coffee-slide.png')
+          .slider-caption
+            h3 Coffee
+            p Get a customized coffee program that is the best fit for  your store or office.
+            a.slider__button(href='http://revoltcoffee.com') Learn More
+        div
+          img.slider-image(alt='Pepsi cooler', src='images/pepsi-cooler.png')
+          .slider-caption
+            h3 Equipment
+            p We service coolers, fountain machines, and draft equipment.
+            a.slider__button(href='equipment.html') Learn More
+      // end #slider1
+    section.kendalls
+      .kendalls__wrapper(data-aos='fade-right', data-aos-anchor='#aos-trigger1')
+        h2 Looking for Craft Beer, Wine, & Cider?
+        p Kendall’s Craft Beverages is Corwin Beverage’s beer and wine division.
+        p
+          | Artisanal, small batch, handcrafted, boutique — we have relationships with the folks who are changing the beverage landscape in our region.
+        a.kendalls__box-link(href='http://kendallspioneer.com') Visit Kendall's Craft Beverages
+    section.featured
+      .featured__wrapper
+        h2.featured__headline Featured Products
+        ul.featured__list
+          li(data-aos='fade-up', data-aos-anchor='#aos-trigger2')
+            a(href='http://revoltcoffee.com/')
+              img(alt='Revolt Coffee logo', src='images/revolt-log.svg')
+          li(data-aos='fade-up', data-aos-anchor='#aos-trigger2')
+            a(href='http://www.mountaindew.com/dewice/')
+              img(alt='Mountain Dew Ice logo logo', src='images/mtn-dew-ice-logo.svg')
+          li(data-aos='fade-up', data-aos-anchor='#aos-trigger2')
+            a(href='https://www.bubly.com/#/')
+              img(alt='Bubly logo logo', src='images/bubly-logo.svg')
+          li(data-aos='fade-up', data-aos-anchor='#aos-trigger2')
+            a(href='https://www.silagysauce.com/')
+              img(alt='Silagy Hot Sauce logo', src='images/silagy-logo.svg')
+
+    include ../includes/site-footer.pug
+
+
+    // Box Slider script
+    script.
+      $(document).ready(function(){
+      $('#slider1').bxSlider();
+      });
+      
+    // Animate on Scroll
+    script.
+      AOS.init({
+      duration: 1100,
+      })
+      
+    include ../includes/global-scripts.pug

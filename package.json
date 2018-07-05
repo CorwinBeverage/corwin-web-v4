@@ -1,0 +1,17 @@
+{
+  "name": "corwin-web-v4",
+  "version": "1.0.0",
+  "description": "Corwin website",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Greg Davenport",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.24.5",
+    "gulp": "^3.9.1",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.0.1"
+  }
+}

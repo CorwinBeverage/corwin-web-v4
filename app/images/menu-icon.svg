@@ -1,0 +1,22 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="90" height="60" viewBox="0 0 90 60">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #b3b3b3;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <title>menu-icon</title>
+  <rect class="cls-1" width="90" height="60"/>
+  <polyline class="cls-2" points="85.13 4.67 85.13 55.33 4.88 55.33 4.88 4.67 85.13 4.67"/>
+  <g>
+    <rect class="cls-1" x="12" y="10.67" width="66" height="5.52"/>
+    <rect class="cls-1" x="12" y="21.71" width="66" height="5.52"/>
+    <rect class="cls-1" x="12" y="32.76" width="66" height="5.52"/>
+    <rect class="cls-1" x="12" y="43.81" width="66" height="5.52"/>
+  </g>
+</svg>
